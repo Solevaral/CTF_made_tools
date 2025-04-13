@@ -4,7 +4,7 @@ import fnmatch
 from datetime import datetime
 
 # Определяем системные директории для исключения
-SYSTEM_DIRS = {'/proc', '/sys', '/dev', '/run', '/tmp', '/snap', '/usr', '/var', '/.var', '/etc', '/root'}
+SYSTEM_DIRS = {'/proc', '/sys', '/dev', '/run', '/tmp', '/snap', '/usr', '/var', '/etc', '/root'}
 
 def is_hidden(filepath):
     return os.path.basename(filepath).startswith('.') and not filepath.endswith(('/', '/.', '/..'))

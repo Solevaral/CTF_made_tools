@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# Поиск скрытых файлов и флагов в системе
 import os
 import fnmatch
 from datetime import datetime
